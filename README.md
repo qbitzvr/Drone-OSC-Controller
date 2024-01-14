@@ -36,8 +36,9 @@
 
 # Usage
 1. Install ThumbParamsOSC: https://github.com/I5UCC/VRCThumbParamsOSC
-2. Run `Configurator.exe` to use avatar parameters specified in `ExpressionParameters vrclens osc`
-3. Start VRChat
+2. Run `Configurator.exe` to and select the avatar parameters specified in the ExpressionParameters you merged.
+3. Run `ThumbParamsOSC.exe` once, this will automatically register it as an overlay in steamvr and [run automatically on startup](https://github.com/I5UCC/VRCThumbParamsOSC#automatic-launch-with-steamvr) 
+4. Start VRChat, switch to your avatar, in the Action menu, go to `Options`>`OSC`>`Enable` 
 
 - For VR controllers, open `Move Camera` Puppet Menu left hand, open any radial menu on right hand.
 - For Xbox controller, wait until xinput update for ThumbParamsOSC (WIP). You will also need to stop vrchat from using the controller as input with HidHide: https://github.com/nefarius/HidHide
