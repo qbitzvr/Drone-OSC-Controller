@@ -1,4 +1,4 @@
-# VRCLens OSC Controller
+# Drone OSC Controller
 
 ## Install Drone Controls
 
