@@ -60,7 +60,9 @@ Open Animation Tab, click Preview, scroll dropdown for following animations:
 - `DropHardEnable` - `Parent Constraint.Sources.Array.data[1].weight` = `0.1` (0, 3 seconds)
 
 ## Make drone rotation faster
-For the following animations, set rotation from `0.1` to `0.2`:
+By default, I provide different speed settings in the `Animations` folder, but here's how you can achieve the same effect with the default drone animations.
+Replace the rotation magnitude of `0.1` with whatever you like in the following animations.
+By default it is `0.4` for VR mode and `0.2` for Xbox controller.
 - `RotFastDown`
 - `RotFastLeft`
 - `RotFastRight`

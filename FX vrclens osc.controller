@@ -9198,7 +9198,7 @@ BlendTree:
   m_Name: Rotation BlendTree
   m_Childs:
   - serializedVersion: 2
-    m_Motion: {fileID: 7400000, guid: 4d1bce6fab2bafa4f92e2a4b4124a978, type: 2}
+    m_Motion: {fileID: 7400000, guid: b313d9b3cd1660c4b8d044e72c4f2cbb, type: 2}
     m_Threshold: 0
     m_Position: {x: -1, y: 0}
     m_TimeScale: 10
@@ -9206,7 +9206,7 @@ BlendTree:
     m_DirectBlendParameter: GestureLeftWeight
     m_Mirror: 0
   - serializedVersion: 2
-    m_Motion: {fileID: 7400000, guid: d2e6276dfcf330b4caca8a65d3978a28, type: 2}
+    m_Motion: {fileID: 7400000, guid: 8ee90dc4fa1ff2845a834056701888d5, type: 2}
     m_Threshold: 0.33333334
     m_Position: {x: 0, y: 1}
     m_TimeScale: 10
@@ -9214,7 +9214,7 @@ BlendTree:
     m_DirectBlendParameter: GestureLeftWeight
     m_Mirror: 0
   - serializedVersion: 2
-    m_Motion: {fileID: 7400000, guid: 0beeca4e90d87864ab9b3503139429a9, type: 2}
+    m_Motion: {fileID: 7400000, guid: ea9d5e8aec4f4f543824549a1c097186, type: 2}
     m_Threshold: 0.6666667
     m_Position: {x: 1, y: 0}
     m_TimeScale: 10
@@ -9222,7 +9222,7 @@ BlendTree:
     m_DirectBlendParameter: GestureLeftWeight
     m_Mirror: 0
   - serializedVersion: 2
-    m_Motion: {fileID: 7400000, guid: 2f44928f36874df44a309554454aca64, type: 2}
+    m_Motion: {fileID: 7400000, guid: 384e844953511e245a59d70882bf90f2, type: 2}
     m_Threshold: 1
     m_Position: {x: 0, y: -1}
     m_TimeScale: 10
@@ -34599,7 +34599,7 @@ BlendTree:
   m_Name: Right Stick Rotation
   m_Childs:
   - serializedVersion: 2
-    m_Motion: {fileID: 7400000, guid: 4d1bce6fab2bafa4f92e2a4b4124a978, type: 2}
+    m_Motion: {fileID: 7400000, guid: fe3b70e22b1a44749b56ea0494a71064, type: 2}
     m_Threshold: 0
     m_Position: {x: -1, y: 0}
     m_TimeScale: 1
@@ -34607,7 +34607,7 @@ BlendTree:
     m_DirectBlendParameter: GestureLeftWeight
     m_Mirror: 0
   - serializedVersion: 2
-    m_Motion: {fileID: 7400000, guid: d2e6276dfcf330b4caca8a65d3978a28, type: 2}
+    m_Motion: {fileID: 7400000, guid: c27b37f18f2b60343b5acd9faa02647c, type: 2}
     m_Threshold: 0.33333334
     m_Position: {x: 0, y: 1}
     m_TimeScale: 1
@@ -34615,7 +34615,7 @@ BlendTree:
     m_DirectBlendParameter: GestureLeftWeight
     m_Mirror: 0
   - serializedVersion: 2
-    m_Motion: {fileID: 7400000, guid: 0beeca4e90d87864ab9b3503139429a9, type: 2}
+    m_Motion: {fileID: 7400000, guid: 5c8b8d2d0f82c8843990f5489496d751, type: 2}
     m_Threshold: 0.6666667
     m_Position: {x: 1, y: 0}
     m_TimeScale: 1
@@ -34623,7 +34623,7 @@ BlendTree:
     m_DirectBlendParameter: GestureLeftWeight
     m_Mirror: 0
   - serializedVersion: 2
-    m_Motion: {fileID: 7400000, guid: 2f44928f36874df44a309554454aca64, type: 2}
+    m_Motion: {fileID: 7400000, guid: 6fd84d5b10278f546acfc3320ba6d10c, type: 2}
     m_Threshold: 1
     m_Position: {x: 0, y: -1}
     m_TimeScale: 1
