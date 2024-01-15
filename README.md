@@ -8,6 +8,8 @@ Additionally, this projects provides Xbox controller OSC for your drone to enabl
 
 ## Install Drone Controls
 
+Download and import the unity package from the [latest release](https://github.com/qbitzvr/Drone-OSC-Controller/releases/latest).
+
 ### Prerequisites:
 - Have an avatar with [VRCLens](https://hirabiki.gumroad.com/l/rpnel) already installed.
 - Install [AV3 Manager](https://github.com/VRLabs/Avatars-3.0-Manager) through VRChat Creator Companion.
@@ -28,7 +30,7 @@ Additionally, this projects provides Xbox controller OSC for your drone to enabl
 
 ### Remove old FX layer:
 1. Navigate to your fx layer on your avatar.
-2. rename `vCNP_Drone 212-214 i234 0" to "vCNP_Drone 212-214 i234 modified` (just as a reminder)
+2. rename `vCNP_Drone 212-214 i234 0` to `vCNP_Drone 212-214 i234 modified` (just as a reminder)
 3. delete `vCNP_Drone 212-214 i234`
 
 ### Customize controls:
