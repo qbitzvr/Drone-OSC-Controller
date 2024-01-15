@@ -1,10 +1,16 @@
 # Drone OSC Controller
+Drone OSC Controller adds additional controls to the drone in VRCLens using VRChat OSC.
+
+The most typical setup in VRCLens only allows lateral movement with hand based rotation.
+This has the downside of having to twist your hand in awkward positions when attempting to do 360 degree video.
+We solve this in VR by passing right hand controller data through OSC avatar parameters to control vertical and horizontal pitch.
+Additionally, this projects provides Xbox controller OSC for your drone to enable a more comfortable experience and VRChat Desktop support (WIP).
 
 ## Install Drone Controls
 
 ### Prerequisites:
-- Have an avatar with VRCLens already installed.
-- Install AV3 Manager through VRChat Creator Companion.
+- Have an avatar with [VRCLens](https://hirabiki.gumroad.com/l/rpnel) already installed.
+- Install [AV3 Manager](https://github.com/VRLabs/Avatars-3.0-Manager) through VRChat Creator Companion.
 - Backup your project, duplicate your scene and work on that copy.
 
 ### Merge FX controller:
@@ -44,11 +50,11 @@
 - For Xbox controller, wait until xinput update for ThumbParamsOSC (WIP). You will also need to stop vrchat from using the controller as input with HidHide: https://github.com/nefarius/HidHide
 
 # Tweaks
-## Make drone motion smoother
+## Make drone motion smoother (highly recommeded)
 Reference Video: https://youtu.be/XMcTfFoNUHA?si=sEnlIc5fUIuM7Scj&t=55
 
 In Project Hierarchy:
-- `DroneBase` / Parent Constraint / Weight = `0.97`
+- `DroneBase` / Parent Constraint / Weight = `0.97` (smooth), `0.99` (more smooth)
 - `CamObject` / Parent Constraint / Sources / Add `CamObject` Transform
 - `CamObject` / Parent Constraint / Sources / Set DroneBase Weight = `0.1`
 
@@ -59,7 +65,7 @@ Open Animation Tab, click Preview, scroll dropdown for following animations:
 - `DropEnable` - `Parent Constraint.Sources.Array.data[1].weight` = `0.1` (0, 3 seconds)
 - `DropHardEnable` - `Parent Constraint.Sources.Array.data[1].weight` = `0.1` (0, 3 seconds)
 
-## Make drone rotation faster
+## Change drone rotation speed (optional)
 By default, I provide different speed settings in the `Animations` folder, but here's how you can achieve the same effect with the default drone animations.
 Replace the rotation magnitude of `0.1` with whatever you like in the following animations.
 By default it is `0.4` for VR mode and `0.2` for Xbox controller.
