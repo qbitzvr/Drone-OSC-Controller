@@ -8702,33 +8702,6 @@ AnimatorState:
   m_MirrorParameter: 
   m_CycleOffsetParameter: 
   m_TimeParameter: 
---- !u!1102 &-7389449949098919481
-AnimatorState:
-  serializedVersion: 6
-  m_ObjectHideFlags: 1
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_Name: ThumbParamsOSC
-  m_Speed: 1
-  m_CycleOffset: 0
-  m_Transitions:
-  - {fileID: -5527347137385032607}
-  m_StateMachineBehaviours: []
-  m_Position: {x: 50, y: 50, z: 0}
-  m_IKOnFeet: 0
-  m_WriteDefaultValues: 1
-  m_Mirror: 0
-  m_SpeedParameterActive: 0
-  m_MirrorParameterActive: 0
-  m_CycleOffsetParameterActive: 0
-  m_TimeParameterActive: 0
-  m_Motion: {fileID: -5353753602822113740}
-  m_Tag: 
-  m_SpeedParameter: 
-  m_MirrorParameter: 
-  m_CycleOffsetParameter: 
-  m_TimeParameter: 
 --- !u!1101 &-7380162037127100188
 AnimatorStateTransition:
   m_ObjectHideFlags: 1
@@ -9201,7 +9174,7 @@ BlendTree:
     m_Motion: {fileID: 7400000, guid: b313d9b3cd1660c4b8d044e72c4f2cbb, type: 2}
     m_Threshold: 0
     m_Position: {x: -1, y: 0}
-    m_TimeScale: 1
+    m_TimeScale: 10
     m_CycleOffset: 0
     m_DirectBlendParameter: GestureLeftWeight
     m_Mirror: 0
@@ -9209,7 +9182,7 @@ BlendTree:
     m_Motion: {fileID: 7400000, guid: 8ee90dc4fa1ff2845a834056701888d5, type: 2}
     m_Threshold: 0.33333334
     m_Position: {x: 0, y: 1}
-    m_TimeScale: 1
+    m_TimeScale: 10
     m_CycleOffset: 0
     m_DirectBlendParameter: GestureLeftWeight
     m_Mirror: 0
@@ -9217,7 +9190,7 @@ BlendTree:
     m_Motion: {fileID: 7400000, guid: ea9d5e8aec4f4f543824549a1c097186, type: 2}
     m_Threshold: 0.6666667
     m_Position: {x: 1, y: 0}
-    m_TimeScale: 1
+    m_TimeScale: 10
     m_CycleOffset: 0
     m_DirectBlendParameter: GestureLeftWeight
     m_Mirror: 0
@@ -9225,7 +9198,7 @@ BlendTree:
     m_Motion: {fileID: 7400000, guid: 384e844953511e245a59d70882bf90f2, type: 2}
     m_Threshold: 1
     m_Position: {x: 0, y: -1}
-    m_TimeScale: 1
+    m_TimeScale: 10
     m_CycleOffset: 0
     m_DirectBlendParameter: GestureLeftWeight
     m_Mirror: 0
@@ -16833,31 +16806,6 @@ AnimatorState:
   m_MirrorParameter: 
   m_CycleOffsetParameter: 
   m_TimeParameter: 
---- !u!1101 &-5527347137385032607
-AnimatorStateTransition:
-  m_ObjectHideFlags: 1
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_Name: 
-  m_Conditions:
-  - m_ConditionMode: 7
-    m_ConditionEvent: VRCLFeatureToggle
-    m_EventTreshold: 212
-  m_DstStateMachine: {fileID: 0}
-  m_DstState: {fileID: 6794481210212130615}
-  m_Solo: 0
-  m_Mute: 0
-  m_IsExit: 0
-  serializedVersion: 3
-  m_TransitionDuration: 0
-  m_TransitionOffset: 0
-  m_ExitTime: 0
-  m_HasExitTime: 0
-  m_HasFixedDuration: 1
-  m_InterruptionSource: 0
-  m_OrderedInterruption: 1
-  m_CanTransitionToSelf: 1
 --- !u!1102 &-5526762983724823744
 AnimatorState:
   serializedVersion: 6
@@ -17692,37 +17640,6 @@ MonoBehaviour:
     destMax: 0
   localOnly: 1
   debugString: 
---- !u!206 &-5353753602822113740
-BlendTree:
-  m_ObjectHideFlags: 1
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_Name: OSC Blend Tree
-  m_Childs:
-  - serializedVersion: 2
-    m_Motion: {fileID: -7250120418315138159}
-    m_Threshold: 0
-    m_Position: {x: 0, y: 0}
-    m_TimeScale: 1
-    m_CycleOffset: 0
-    m_DirectBlendParameter: BlendValue
-    m_Mirror: 0
-  - serializedVersion: 2
-    m_Motion: {fileID: 769524560624109965}
-    m_Threshold: 1
-    m_Position: {x: 0, y: 0}
-    m_TimeScale: 1
-    m_CycleOffset: 0
-    m_DirectBlendParameter: BlendValue
-    m_Mirror: 0
-  m_BlendParameter: GestureLeftWeight
-  m_BlendParameterY: GestureLeftWeight
-  m_MinThreshold: 0
-  m_MaxThreshold: 1
-  m_UseAutomaticThresholds: 1
-  m_NormalizedBlendValues: 0
-  m_BlendType: 4
 --- !u!1101 &-5346673107478897595
 AnimatorStateTransition:
   m_ObjectHideFlags: 1
@@ -22361,6 +22278,53 @@ AnimatorStateTransition:
   m_InterruptionSource: 0
   m_OrderedInterruption: 1
   m_CanTransitionToSelf: 1
+--- !u!206 &-4461329074513587461
+BlendTree:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: XInput Blend Tree
+  m_Childs:
+  - serializedVersion: 2
+    m_Motion: {fileID: 8246565502837648921}
+    m_Threshold: 0
+    m_Position: {x: 0, y: 0}
+    m_TimeScale: 1
+    m_CycleOffset: 0
+    m_DirectBlendParameter: BlendValue
+    m_Mirror: 0
+  - serializedVersion: 2
+    m_Motion: {fileID: -1727588590647349528}
+    m_Threshold: 0
+    m_Position: {x: 0, y: 0}
+    m_TimeScale: 1
+    m_CycleOffset: 0
+    m_DirectBlendParameter: BlendValue
+    m_Mirror: 0
+  - serializedVersion: 2
+    m_Motion: {fileID: 5655308696081936700}
+    m_Threshold: 0
+    m_Position: {x: 0, y: 0}
+    m_TimeScale: 1
+    m_CycleOffset: 0
+    m_DirectBlendParameter: BlendValue
+    m_Mirror: 0
+  - serializedVersion: 2
+    m_Motion: {fileID: -7690574330481407385}
+    m_Threshold: 0
+    m_Position: {x: 0, y: 0}
+    m_TimeScale: 1
+    m_CycleOffset: 0
+    m_DirectBlendParameter: BlendValue
+    m_Mirror: 0
+  m_BlendParameter: GestureLeftWeight
+  m_BlendParameterY: GestureLeftWeight
+  m_MinThreshold: 0
+  m_MaxThreshold: 0
+  m_UseAutomaticThresholds: 1
+  m_NormalizedBlendValues: 0
+  m_BlendType: 4
 --- !u!1101 &-4460787041128540912
 AnimatorStateTransition:
   m_ObjectHideFlags: 1
@@ -34552,7 +34516,7 @@ BlendTree:
   m_Name: Right Stick Rotation
   m_Childs:
   - serializedVersion: 2
-    m_Motion: {fileID: 7400000, guid: 4d1bce6fab2bafa4f92e2a4b4124a978, type: 2}
+    m_Motion: {fileID: 7400000, guid: fe3b70e22b1a44749b56ea0494a71064, type: 2}
     m_Threshold: 0
     m_Position: {x: -1, y: 0}
     m_TimeScale: 1
@@ -34560,7 +34524,7 @@ BlendTree:
     m_DirectBlendParameter: GestureLeftWeight
     m_Mirror: 0
   - serializedVersion: 2
-    m_Motion: {fileID: 7400000, guid: d2e6276dfcf330b4caca8a65d3978a28, type: 2}
+    m_Motion: {fileID: 7400000, guid: c27b37f18f2b60343b5acd9faa02647c, type: 2}
     m_Threshold: 0.33333334
     m_Position: {x: 0, y: 1}
     m_TimeScale: 1
@@ -34568,7 +34532,7 @@ BlendTree:
     m_DirectBlendParameter: GestureLeftWeight
     m_Mirror: 0
   - serializedVersion: 2
-    m_Motion: {fileID: 7400000, guid: 0beeca4e90d87864ab9b3503139429a9, type: 2}
+    m_Motion: {fileID: 7400000, guid: 5c8b8d2d0f82c8843990f5489496d751, type: 2}
     m_Threshold: 0.6666667
     m_Position: {x: 1, y: 0}
     m_TimeScale: 1
@@ -34576,7 +34540,7 @@ BlendTree:
     m_DirectBlendParameter: GestureLeftWeight
     m_Mirror: 0
   - serializedVersion: 2
-    m_Motion: {fileID: 7400000, guid: 2f44928f36874df44a309554454aca64, type: 2}
+    m_Motion: {fileID: 7400000, guid: 6fd84d5b10278f546acfc3320ba6d10c, type: 2}
     m_Threshold: 1
     m_Position: {x: 0, y: -1}
     m_TimeScale: 1
@@ -39831,6 +39795,31 @@ AnimatorState:
   m_MirrorParameter: 
   m_CycleOffsetParameter: 
   m_TimeParameter: 
+--- !u!1101 &-669698940670538850
+AnimatorStateTransition:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: 
+  m_Conditions:
+  - m_ConditionMode: 6
+    m_ConditionEvent: VRCLFeatureToggle
+    m_EventTreshold: 212
+  m_DstStateMachine: {fileID: 0}
+  m_DstState: {fileID: 2232577341668422158}
+  m_Solo: 0
+  m_Mute: 0
+  m_IsExit: 0
+  serializedVersion: 3
+  m_TransitionDuration: 0
+  m_TransitionOffset: 0
+  m_ExitTime: 1
+  m_HasExitTime: 1
+  m_HasFixedDuration: 1
+  m_InterruptionSource: 0
+  m_OrderedInterruption: 1
+  m_CanTransitionToSelf: 1
 --- !u!1102 &-663597791437666722
 AnimatorState:
   serializedVersion: 6
@@ -43565,7 +43554,7 @@ AnimatorController:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: VRCLens OSC VR Mode FX
+  m_Name: Drone Xbox FX
   serializedVersion: 5
   m_AnimatorParameters:
   - m_Name: GestureLeft
@@ -58208,6 +58197,33 @@ AnimatorStateMachine:
   m_ExitPosition: {x: 800, y: 120, z: 0}
   m_ParentStateMachinePosition: {x: 800, y: 20, z: 0}
   m_DefaultState: {fileID: -902503800488032514}
+--- !u!1102 &2232577341668422158
+AnimatorState:
+  serializedVersion: 6
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: XInput Controller
+  m_Speed: 1
+  m_CycleOffset: 0
+  m_Transitions:
+  - {fileID: 6320736966531869663}
+  m_StateMachineBehaviours: []
+  m_Position: {x: 50, y: 50, z: 0}
+  m_IKOnFeet: 0
+  m_WriteDefaultValues: 1
+  m_Mirror: 0
+  m_SpeedParameterActive: 0
+  m_MirrorParameterActive: 0
+  m_CycleOffsetParameterActive: 0
+  m_TimeParameterActive: 0
+  m_Motion: {fileID: -4461329074513587461}
+  m_Tag: 
+  m_SpeedParameter: 
+  m_MirrorParameter: 
+  m_CycleOffsetParameter: 
+  m_TimeParameter: 
 --- !u!1101 &2253506525491567862
 AnimatorStateTransition:
   m_ObjectHideFlags: 1
@@ -59455,31 +59471,6 @@ AnimatorStateTransition:
   m_TransitionOffset: 0
   m_ExitTime: 0
   m_HasExitTime: 0
-  m_HasFixedDuration: 1
-  m_InterruptionSource: 0
-  m_OrderedInterruption: 1
-  m_CanTransitionToSelf: 1
---- !u!1101 &2517017291261346178
-AnimatorStateTransition:
-  m_ObjectHideFlags: 1
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_Name: 
-  m_Conditions:
-  - m_ConditionMode: 6
-    m_ConditionEvent: VRCLFeatureToggle
-    m_EventTreshold: 212
-  m_DstStateMachine: {fileID: 0}
-  m_DstState: {fileID: -7389449949098919481}
-  m_Solo: 0
-  m_Mute: 0
-  m_IsExit: 0
-  serializedVersion: 3
-  m_TransitionDuration: 0
-  m_TransitionOffset: 0
-  m_ExitTime: 1
-  m_HasExitTime: 1
   m_HasFixedDuration: 1
   m_InterruptionSource: 0
   m_OrderedInterruption: 1
@@ -62088,8 +62079,8 @@ AnimatorStateMachine:
     m_State: {fileID: -474660165238415352}
     m_Position: {x: 24, y: 252, z: 0}
   - serializedVersion: 1
-    m_State: {fileID: -7389449949098919481}
-    m_Position: {x: 780, y: 270, z: 0}
+    m_State: {fileID: 2232577341668422158}
+    m_Position: {x: 780, y: 210, z: 0}
   m_ChildStateMachines: []
   m_AnyStateTransitions: []
   m_EntryTransitions: []
@@ -63089,7 +63080,7 @@ AnimatorState:
   m_Transitions:
   - {fileID: -5930681484119324048}
   - {fileID: -4555839251513486598}
-  - {fileID: 2517017291261346178}
+  - {fileID: -669698940670538850}
   m_StateMachineBehaviours:
   - {fileID: 1086913905759729902}
   m_Position: {x: 50, y: 50, z: 0}
@@ -77601,6 +77592,31 @@ AnimatorStateTransition:
     m_EventTreshold: 193
   m_DstStateMachine: {fileID: 0}
   m_DstState: {fileID: -951346348890173783}
+  m_Solo: 0
+  m_Mute: 0
+  m_IsExit: 0
+  serializedVersion: 3
+  m_TransitionDuration: 0
+  m_TransitionOffset: 0
+  m_ExitTime: 0
+  m_HasExitTime: 0
+  m_HasFixedDuration: 1
+  m_InterruptionSource: 0
+  m_OrderedInterruption: 1
+  m_CanTransitionToSelf: 1
+--- !u!1101 &6320736966531869663
+AnimatorStateTransition:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: 
+  m_Conditions:
+  - m_ConditionMode: 7
+    m_ConditionEvent: VRCLFeatureToggle
+    m_EventTreshold: 212
+  m_DstStateMachine: {fileID: 0}
+  m_DstState: {fileID: 6794481210212130615}
   m_Solo: 0
   m_Mute: 0
   m_IsExit: 0
