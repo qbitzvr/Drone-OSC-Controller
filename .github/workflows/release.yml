@@ -4,6 +4,11 @@ on:
   push:
     tags:
     - "v*"
+    branches:
+      - main
+  pull_request:
+    branches:  
+      - main
 
 jobs:
   release:
@@ -23,6 +28,7 @@ jobs:
         path: Drone.OSC.Controller.${{ github.ref_name }}.unitypackage
         name: ${{ github.ref_name }}
     - name: Upload binaries to release
+      if: ${{ ! startsWith(github.ref, 'refs/tags/v') }}
       uses: svenstaro/upload-release-action@v2
       with:
         repo_token: ${{ secrets.GITHUB_TOKEN }}
