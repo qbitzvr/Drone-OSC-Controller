@@ -13,16 +13,6 @@ MonoBehaviour:
   m_Name: Drone Xbox ExpressionParameters
   m_EditorClassIdentifier: 
   parameters:
-  - name: RightThumbStickX
-    valueType: 1
-    saved: 0
-    defaultValue: 0
-    networkSynced: 1
-  - name: RightThumbStickY
-    valueType: 1
-    saved: 0
-    defaultValue: 0
-    networkSynced: 1
   - name: XInputLeftThumbStickX
     valueType: 1
     saved: 0
