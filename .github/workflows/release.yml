@@ -22,7 +22,14 @@ jobs:
       with:
         package-path: Drone.OSC.Controller.${{ github.ref_name }}.unitypackage
         include-files: metaList
-    - name: Upload Artifact
+    - name: Upload Artifact Main
+      if: ${{ github.ref_name == 'main' }}
+      uses: actions/upload-artifact@v4
+      with:
+        path: Drone.OSC.Controller.${{ github.ref_name }}.${{ github.sha }}.unitypackage
+        name: ${{ github.ref_name }}
+    - name: Upload Artifact Version Tag
+      if: ${{ ! startsWith(github.ref, 'refs/tags/v') }}
       uses: actions/upload-artifact@v4
       with:
         path: Drone.OSC.Controller.${{ github.ref_name }}.unitypackage
