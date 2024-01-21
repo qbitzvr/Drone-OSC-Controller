@@ -43565,7 +43565,7 @@ AnimatorController:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: Drone VR Mode FX
+  m_Name: Drone VR FX
   serializedVersion: 5
   m_AnimatorParameters:
   - m_Name: GestureLeft
