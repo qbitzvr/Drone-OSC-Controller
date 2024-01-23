@@ -3,12 +3,14 @@ Drone OSC Controller adds additional controls to the drone in VRCLens using VRCh
 
 The most typical setup in VRCLens only allows lateral movement with hand based rotation.
 This has the downside of having to twist your hand in awkward positions when attempting to do 360 degree video.
-We solve this in VR by passing right hand controller data through OSC avatar parameters to control vertical and horizontal pitch.
+We solve this in VR by passing opposite hand controller data through OSC avatar parameters to control vertical and horizontal pitch.
 Additionally, this projects provides Xbox controller OSC for your drone to enable a more comfortable experience and VRChat Desktop supportw.
 
 ## Install Drone Controls
 
 Download and import the unity package from the [latest release](https://github.com/qbitzvr/Drone-OSC-Controller/releases/latest).
+
+Installation Video Guide: https://youtu.be/Arz9iQ2-MKo
 
 ### Prerequisites:
 - Have an avatar with [VRCLens](https://hirabiki.gumroad.com/l/rpnel) already installed.
@@ -30,7 +32,7 @@ Download and import the unity package from the [latest release](https://github.c
 3. Run `ThumbParamsOSC.exe` once, this will automatically register it as an overlay in steamvr and [run automatically on startup](https://github.com/I5UCC/VRCThumbParamsOSC#automatic-launch-with-steamvr) 
 4. Start VRChat, switch to your avatar, in the Action menu, go to `Options`>`OSC`>`Enable` 
 
-- For VR controllers, open `Move Camera` Puppet Menu left hand, open any radial menu on right hand.
+- For VR controllers, open `Move Camera` Puppet Menu main hand, open any action menu on opposite hand to prevent one-handed movement.
 - For Xbox controller, wait until xinput update for ThumbParamsOSC (WIP). You will also need to stop vrchat from using the controller as input with HidHide: https://github.com/nefarius/HidHide
 
 ## Tweaks
