@@ -35,6 +35,14 @@ Installation Video Guide: https://youtu.be/Arz9iQ2-MKo
 - For VR controllers, open `Move Camera` Puppet Menu main hand, open any action menu on opposite hand to prevent one-handed movement.
 - For Xbox controller, wait until xinput update for ThumbParamsOSC (WIP). You will also need to stop vrchat from using the controller as input with HidHide: https://github.com/nefarius/HidHide
 
+### Menu
+After install, you will see a new submenu `Drone OSC Controller`.
+- `Enable Drone OSC Controller`: Turn on drone OSC controls.
+- `Enable Xbox Controller`: Use the Xbox controller instead of VR controller.
+- `Drone Direct (Desktop)`: Use DirectCast mode when you move the drone via `Move Camera`. Only effects Desktop mode.
+- `Mirror Hand Controls (VR)`: When enabled, uses the left thumbstick for rotation control instead of the right thumbstick. Only effects VR mode.
+- `Drone Rotation Speed`: Radial puppet menu that controls the speed of rotation.
+
 ## Tweaks
 ### Make drone motion smoother (highly recommeded)
 Reference Video: https://youtu.be/XMcTfFoNUHA?si=sEnlIc5fUIuM7Scj&t=55

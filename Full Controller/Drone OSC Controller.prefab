@@ -189,7 +189,7 @@ GameObject:
   - component: {fileID: 4753857044914928610}
   - component: {fileID: 3372940574911300295}
   m_Layer: 0
-  m_Name: Direct Stream On Drone (Desktop)
+  m_Name: Drone Direct (Desktop)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -524,7 +524,7 @@ MonoBehaviour:
     isPrefix: 0
     syncType: 2
     localOnly: 0
-    defaultValue: 0.5
+    defaultValue: 0.25
     saved: 1
 --- !u!114 &6248569414184076606
 MonoBehaviour:
