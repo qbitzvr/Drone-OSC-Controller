@@ -27,7 +27,8 @@ Installation Video Guide: https://youtu.be/Arz9iQ2-MKo
 3. Set the newly created FX layer in your Avatar Descriptor.
 
 ## Usage
-1. Install the latest release of ThumbParamsOSC: https://github.com/I5UCC/VRCThumbParamsOSC
+1. Install the latest release of ThumbParamsOSC: https://github.com/I5UCC/VRCThumbParamsOSC  
+For Xbox controls, install the custom build from https://github.com/qbitzvr/VRCThumbParamsOSC/releases/tag/v2.1.0-xbox.0
 2. Run `Configurator.exe` to and select the avatar parameters specified in the ExpressionParameters you merged.
 3. Run `ThumbParamsOSC.exe` once, this will automatically register it as an overlay in steamvr and [run automatically on startup](https://github.com/I5UCC/VRCThumbParamsOSC#automatic-launch-with-steamvr) 
 4. Start VRChat, switch to your avatar, in the Action menu, go to `Options`>`OSC`>`Enable` 
