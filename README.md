@@ -4,7 +4,7 @@ Drone OSC Controller adds additional controls to the drone in VRCLens using VRCh
 The most typical setup in VRCLens only allows lateral movement with hand based rotation.
 This has the downside of having to twist your hand in awkward positions when attempting to do 360 degree video.
 We solve this in VR by passing opposite hand controller data through OSC avatar parameters to control vertical and horizontal pitch.
-Additionally, this projects provides Xbox controller OSC for your drone to enable a more comfortable experience and VRChat Desktop supportw.
+Additionally, this project provides Xbox controller OSC for your drone to enable a more comfortable experience and VRChat Desktop support.
 
 ## Install Drone Controls
 
@@ -33,17 +33,18 @@ Usage Video: https://youtu.be/VzwBhrfv5wc
 For Xbox controls, install the custom build from https://github.com/qbitzvr/VRCThumbParamsOSC/releases/tag/v2.1.0-xbox.0
 2. Run `Configurator.exe` to and select the avatar parameters specified in the ExpressionParameters you merged.
 3. Run `ThumbParamsOSC.exe` once, this will automatically register it as an overlay in steamvr and [run automatically on startup](https://github.com/I5UCC/VRCThumbParamsOSC#automatic-launch-with-steamvr) 
-4. Start VRChat, switch to your avatar, in the Action menu, go to `Options`>`OSC`>`Enable` 
+4. Start VRChat, switch to your avatar, and in the Action menu, go to `Options`>`OSC`>`Enable` 
 
-- For VR controllers, open `Move Camera` Puppet Menu main hand, open any action menu on opposite hand to prevent one-handed movement.
-- For Xbox controller, wait until xinput update for ThumbParamsOSC (WIP). You will also need to stop vrchat from using the controller as input with HidHide: https://github.com/nefarius/HidHide
+- For VR controllers, open `Move Camera` Puppet Menu, open any action menu on opposite hand to prevent one-handed movement.
+- For Xbox controller, toggle `Enable Xbox Controller` option in the `Drone OSC Controller` menu. Then, open `Move Camera` Puppet Menu, then while holding the thumbstick to an angle, close the action menu.  
+You will also need to stop vrchat from using the controller as input with HidHide: https://github.com/nefarius/HidHide
 
 ### Menu
 After install, you will see a new submenu `Drone OSC Controller`.
 - `Enable Drone OSC Controller`: Turn on drone OSC controls.
 - `Enable Xbox Controller`: Use the Xbox controller instead of VR controller.
-- `Drone Direct (Desktop)`: Use DirectCast mode when you move the drone via `Move Camera`. Only effects Desktop mode.
-- `Mirror Hand Controls (VR)`: When enabled, uses the left thumbstick for rotation control instead of the right thumbstick. Only effects VR mode.
+- `Drone Direct (Desktop)`: Use DirectCast mode when you move the drone via `Move Camera`. Only affects Desktop mode.
+- `Mirror Hand Controls (VR)`: When enabled, uses the left thumbstick for rotation control instead of the right thumbstick. Only affects VR mode.
 - `Drone Rotation Speed`: Radial puppet menu that controls the speed of rotation.
 
 ## Tweaks
