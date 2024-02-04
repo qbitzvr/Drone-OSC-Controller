@@ -10,7 +10,7 @@ Additionally, this projects provides Xbox controller OSC for your drone to enabl
 
 Download and import the unity package from the [latest release](https://github.com/qbitzvr/Drone-OSC-Controller/releases/latest).
 
-Installation Video Guide: https://youtu.be/Arz9iQ2-MKo
+Installation Video: https://youtu.be/Arz9iQ2-MKo
 
 ### Prerequisites:
 - Have an avatar with [VRCLens](https://hirabiki.gumroad.com/l/rpnel) already installed.
@@ -27,6 +27,8 @@ Installation Video Guide: https://youtu.be/Arz9iQ2-MKo
 3. Set the newly created FX layer in your Avatar Descriptor.
 
 ## Usage
+Usage Video: https://youtu.be/VzwBhrfv5wc
+
 1. Install the latest release of ThumbParamsOSC: https://github.com/I5UCC/VRCThumbParamsOSC  
 For Xbox controls, install the custom build from https://github.com/qbitzvr/VRCThumbParamsOSC/releases/tag/v2.1.0-xbox.0
 2. Run `Configurator.exe` to and select the avatar parameters specified in the ExpressionParameters you merged.
