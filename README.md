@@ -48,7 +48,7 @@ After install, you will see a new submenu `Drone OSC Controller`.
 - `Drone Rotation Speed`: Radial puppet menu that controls the speed of rotation.
 
 ## Tweaks
-### Make drone motion smoother (highly recommeded)
+### Make drone motion smoother (highly recommended)
 Reference Video: https://youtu.be/XMcTfFoNUHA?si=sEnlIc5fUIuM7Scj&t=55
 
 In Project Hierarchy:
